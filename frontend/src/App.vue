@@ -1,18 +1,17 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import Hero from './components/Hero.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <Hero msg="Sistema de Agendamento de Transferências Financeira" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/accounts">Contas</RouterLink>
+        <RouterLink to="/transactions">Transferências</RouterLink>
       </nav>
     </div>
   </header>
@@ -36,6 +35,12 @@ nav {
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+nav a[data-v-7a7a37b1] {
+  display: initial;
 }
 
 nav a.router-link-exact-active {
