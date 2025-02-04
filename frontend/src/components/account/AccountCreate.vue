@@ -31,9 +31,7 @@ export default {
   data() {
     return {
       modal: null,
-      account: {
-        accountNumber: ''
-      }
+      account: { accountNumber: '' }
     }
   },
   mounted() {
@@ -73,5 +71,9 @@ export default {
 
 form {
   margin-top: 2rem;
+}
+
+input#account_number {
+  color: var(--color-heading);
 }
 </style>

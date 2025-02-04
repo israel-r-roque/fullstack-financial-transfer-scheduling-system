@@ -15,7 +15,7 @@ import AccountCreate from '@/components/account/AccountCreate.vue';
 
 const accountList = ref(null);
 
-const updateAccountList = (newAccount) => { // Recebe os dados da nova conta
+const updateAccountList = (newAccount) => {
   accountList.value.loadAccounts();
 };
 </script>
